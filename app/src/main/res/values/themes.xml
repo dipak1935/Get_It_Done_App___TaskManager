@@ -3,6 +3,10 @@
     <style name="Base.Theme.GetItDone" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimaryDark">#F7C5D5</item>
+        <item name="android:textColorPrimary">#4D1C1C</item>
+        
     </style>
 
     <style name="Theme.GetItDone" parent="Base.Theme.GetItDone" />

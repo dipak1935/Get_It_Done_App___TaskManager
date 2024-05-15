@@ -7,27 +7,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Get It Done"
-        app:titleCentered="true"
-
         app:layout_constraintTop_toTopOf="parent">
 
 
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Get It Done"
+            app:titleCentered="true"
+            android:background="#F7C5D5"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/image_view_account"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/icon_account"
-            android:layout_gravity="end"
-            android:layout_marginEnd="10dp"/>
+            <ImageView
+                android:id="@+id/image_view_account"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/descriptionProfileImage"
+                android:src="@drawable/icon_account"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"/>
 
 
-    </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
