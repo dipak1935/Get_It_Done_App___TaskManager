@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Get It Done</string>
     <string name="descriptionProfileImage">profileImage</string>
+    <string name="hint_add_task">Add Task</string>
 </resources>
